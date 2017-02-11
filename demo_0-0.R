@@ -42,4 +42,7 @@ for (i in 1:ncol(dat)) {
   lines(dat[,i], col = "#003366", lwd = 2)
   abline(h = qt[i], col = "#E8600B", lwd = 3)}
 
+# common title & legend to be added later
+
+
 
