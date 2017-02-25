@@ -34,7 +34,7 @@ colnames(dat) <- nm
 
 # plot data
 par(mfrow = c(2, 2),
-  mar = c(5,3,3,2), oma = c(1,0,3,0),
+  mar = c(5,3,2,2), oma = c(1,0,2,0),
   cex = 0.7, bty = "n",
   las = 1, adj = 0)
 for (i in 1:ncol(dat)) {
