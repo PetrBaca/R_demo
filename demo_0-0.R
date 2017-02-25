@@ -34,14 +34,15 @@ colnames(dat) <- nm
 
 # plot data
 par(mfrow = c(2, 2),
-  mar = c(5,3,3,2), oma = c(3,0,3,0),
+  mar = c(5,3,3,2), oma = c(1,0,3,0),
   cex = 0.7, bty = "n",
   las = 1, adj = 0)
 for (i in 1:ncol(dat)) {
   plot(dat[,i], main = nm[i], type = "n", auto.grid = F)
   lines(dat[,i], col = "#003366", lwd = 2)
   abline(h = qt[i], col = "#E8600B", lwd = 1, lty = 3)}
-
+title(main = "Oil production", outer = TRUE, adj = 0.01, cex.main = 1.6)
+title(sub = "Source: EIA (via Quandl), CSOB", adj = 1)
 ## end
 
 # TO-DO LIST
