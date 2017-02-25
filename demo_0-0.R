@@ -40,7 +40,7 @@ par(mfrow = c(2, 2),
 for (i in 1:ncol(dat)) {
   plot(dat[,i], main = nm[i], type = "n", auto.grid = F)
   lines(dat[,i], col = "#003366", lwd = 2)
-  abline(h = qt[i], col = "#E8600B", lwd = 3)}
+  abline(h = qt[i], col = "#E8600B", lwd = 1, lty = 3)}
 
 ## end
 
