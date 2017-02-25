@@ -41,7 +41,7 @@ for (i in 1:ncol(dat)) {
   plot(dat[,i], main = nm[i], type = "n", auto.grid = F)
   lines(dat[,i], col = "#003366", lwd = 2)
   abline(h = qt[i], col = "#E8600B", lwd = 1, lty = 3)}
-title(main = "Oil production", outer = TRUE, adj = 0.01, cex.main = 1.6)
+title(main = "Oil production (mbpd)", outer = TRUE, adj = 0.01, cex.main = 1.6)
 title(sub = "Source: EIA (via Quandl), CSOB", adj = 1)
 ## end
 
