@@ -1,11 +1,14 @@
 
 # clear all
-rm(list = ls())
+# rm(list = ls())
+
+## @knitr intro
 
 ## =-=-=-=-=-=-=-=-=-=-= ##
 ## LIBRARIES
 ## =-=-=-=-=-=-=-=-=-=-= ##
 
+# if not installed then install...
 if(!require('xts')) {install.packages('xts'); library('xts')}
 if(!require('Quandl')) {install.packages('Quandl'); library('Quandl')}
 
@@ -32,6 +35,7 @@ dat_raw <- Quandl(tic, type = "xts")
 dat <- na.contiguous(dat_raw)
 colnames(dat) <- nm
 
+## @knitr oil_prod_plot
 # plot data
 par(mfrow = c(2, 2),
   mar = c(4,3,2,2), oma = c(1,0,2,0),
@@ -45,3 +49,4 @@ title(main = "Oil production (mbpd)", outer = TRUE, adj = 0.01, cex.main = 1.6)
 title(sub = "Source: EIA (via Quandl), CSOB", outer = TRUE, line = 0, adj = 1)
 
 ## end
+## to be continued..
