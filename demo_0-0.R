@@ -43,4 +43,5 @@ for (i in 1:ncol(dat)) {
   abline(h = qt[i], col = "#E8600B", lwd = 1, lty = 3)}
 title(main = "Oil production (mbpd)", outer = TRUE, adj = 0.01, cex.main = 1.6)
 title(sub = "Source: EIA (via Quandl), CSOB", outer = TRUE, line = 0, adj = 1)
+
 ## end
