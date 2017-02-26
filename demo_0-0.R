@@ -1,13 +1,13 @@
 
 # clear all
-# rm(list = ls())
+rm(list = ls())
 
 ## =-=-=-=-=-=-=-=-=-=-= ##
 ## LIBRARIES
 ## =-=-=-=-=-=-=-=-=-=-= ##
 
-library('xts')
-library('Quandl')
+if(!require('xts')) {install.packages('xts'); library('xts')}
+if(!require('Quandl')) {install.packages('Quandl'); library('Quandl')}
 
 ## =-=-=-=-=-=-=-=-=-=-= ##
 ## ANALYSIS
@@ -44,8 +44,4 @@ for (i in 1:ncol(dat)) {
 title(main = "Oil production (mbpd)", outer = TRUE, adj = 0.01, cex.main = 1.6)
 title(sub = "Source: EIA (via Quandl), CSOB", outer = TRUE, line = 0, adj = 1)
 ## end
-
-# TO-DO LIST
-# common title & legend to be added later
-
 
