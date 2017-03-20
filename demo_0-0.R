@@ -48,9 +48,4 @@ for (i in 1:ncol(dat)) {
 title(main = "Oil production (mbpd)", outer = TRUE, adj = 0.01, cex.main = 1.6)
 title(sub = "Source: EIA (via Quandl)", outer = TRUE, line = 0, adj = 1)
 
-# some changes
-# -----------------------
-# hello how are you
-
 ## end
-## to be continued..
